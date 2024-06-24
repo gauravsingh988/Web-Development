@@ -337,27 +337,33 @@ p {
     background-color: var(--light-bg);
 }
 
+.service_main .service_maincard:hover .service_content {
+    opacity: 1;
+}
+
 .service_main .service_maincard .service_content {
     background-color: var(--darkblue-color);
     border-radius: 10px;
     padding: 15px 20px;
-    bottom: 15px;
+    bottom: 6px;
     transition: 0.4s;
-    width: 361px;
+    width: 97%;
     position: absolute;
-    right: 10px;
+    right: 0;
+    left: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.5s;
 }
 
 .service_main .service_maincard .service_imgs img {
-    width: 360px;
-    min-width: 360px;
     height: 385px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .service_main .service_maincard .service_content h5 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 34px;
     color: var(--white-color);
@@ -380,6 +386,7 @@ p {
     max-height: 450px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-right: 5px;
 }
 
 .our_story .our_story_scroll::-webkit-scrollbar {
@@ -397,18 +404,19 @@ p {
     border-radius: 5px;
 }
 
-.our_story .nav-pills {
+.our_story .nav-tabs {
     background-color: var(--light-bg);
+    border: none;
 }
 
-.our_story .nav-pills .nav-link {
+.our_story .nav-tabs .nav-link {
     border-radius: 0px;
     color: var(--darkblue-color);
     font-size: 16px;
 }
 
-.our_story .nav-pills .nav-link:hover,
-.our_story .nav-pills .nav-link.active {
+.our_story .nav-tabs .nav-link:hover,
+.our_story .nav-tabs .nav-link.active {
     background-color: var(--darkblue-color);
     color: var(--white-color);
 }
@@ -418,6 +426,7 @@ p {
     border-radius: 5px;
     transition: all 0.5s;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .our_story .maincard_ourstory::before {
@@ -531,6 +540,49 @@ p {
     font-weight: 300;
 }
 
+.price_scroll_vertical {
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+.our_price .maincard_price .price_scroll_vertical::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--text-gray);
+}
+
+.our_price .maincard_price .price_scroll_vertical:-webkit-scrollbar-track {
+    width: 10px;
+    background-color: var(--text-gray);
+}
+
+.our_price .maincard_price .price_scroll_vertical::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--darkblue-color);
+    border-radius: 2px;
+}
+
+.our_price .maincard_price .price_cardmain .price_content .price-scroll_block {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.our_price .maincard_price .price_cardmain .price_content .price-scroll_block::-webkit-scrollbar {
+    width: 7px;
+}
+
+.our_price .maincard_price .price_cardmain .price_content .price-scroll_block::-webkit-scrollbar-track {
+    width: 7px;
+    background-color: var(--text-gray);
+}
+
+.our_price .maincard_price .price_cardmain .price_content .price-scroll_block::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: var(--darkblue-color);
+    border-radius: 5px;
+}
+
 .our_price .maincard_price .price_cardmain .price_content .price-scroll_block li {
     font-size: 16px;
     position: relative;
@@ -550,3 +602,123 @@ p {
     transform: translateY(-50%);
     color: #0092ff;
 }
+
+/* *******************************Our Price  Section CSS end***************************************** */
+
+/* *******************************estominal  Section CSS start***************************************** */
+
+.our-testomonial .testominal_card .client_img {
+    background: var(--darkblue-color);
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-testomonial .testominal_card .client_img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.our-testomonial .testominal_card .testomonia_content h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 5px;
+    font-family: var(--font-family);
+    color: var(--darkblue-color);
+    position: relative;
+}
+
+.our-testomonial .testominal_card .testomonia_content h1::before {
+    content: "\f10d";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 41%;
+    left: -40px;
+    font-size: 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: var(--darkblue-color);
+}
+
+.our-testomonial .testominal_card .testomonia_content h5 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    color: var(--darkblue-color);
+    text-transform: capitalize;
+    position: relative;
+}
+
+/* *******************************testominal  Section CSS end***************************************** */
+
+/* *******************************blog  Section CSS start***************************************** */
+
+.blog_maincard .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog_maincard .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog_maincard .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.blog_maincard .tag {
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+
+.blog_maincard .tag-teal {
+    background-color: #08a5cc;
+}
+
+.blog_maincard .tag-purple {
+    background-color: #3d1d94;
+}
+
+.blog_maincard .tag-pink {
+    background-color: #c62bcd;
+}
+
+.blog_maincard .card-body h4 {
+    margin: 10px 0;    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    color: var(--darkblue-color);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.blog_maincard .card-body p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+/* *******************************blog  Section CSS end***************************************** */
