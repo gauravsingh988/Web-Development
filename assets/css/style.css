@@ -79,7 +79,7 @@ p {
   font-family: var(--font-family);
   line-height: 25px;
 }
-.container{
+.container {
   width: 95%;
   max-width: 95%;
 }
@@ -165,7 +165,12 @@ p {
   background-color: var(--dark-mainblue);
   border-bottom: 1px solid #f1f0f047;
 }
-
+.mainheader .navbar-expand-lg  .navbar-brand span{
+  color: var(--darkblue-color);
+  padding: 2px 5px;
+  background-color: var(--white-color);
+  margin-left: 4px;
+}
 .mainheader .navbar-expand-lg .navbar-nav .nav-link {
   color: var(--white-color);
   font-size: 16px;
@@ -179,16 +184,16 @@ p {
   display: block;
   margin-top: 0; /* remove the gap so it doesn't close */
 }
-.mainheader .navbar-expand-lg .dropdown .dropdown-menu{
-    padding: 0;
-    border-radius: 0;
+.mainheader .navbar-expand-lg .dropdown .dropdown-menu {
+  padding: 0;
+  border-radius: 0;
 }
-.mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item{
-    padding: 7px 10px;
+.mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item {
+  padding: 7px 10px;
 }
-.mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color: var(--dark-mainblue);
-    color: var(--white-color);
+.mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(--dark-mainblue);
+  color: var(--white-color);
 }
 .btn-gettouch {
   background: var(--white-color);
@@ -215,7 +220,17 @@ p {
   background: var(--white-color);
   color: var(--black-color);
 }
-
+.bredcrump {
+  display: flex;
+  font-size: 16px;
+}
+.bredcrump span {
+  padding: 0 10px;
+  color: var(--white-color);
+}
+.bredcrump li a.active {
+  color: var(--text-gray);
+}
 /* *****************Header Section CSS End*************************** */
 
 /* *****************Hero Section CSS start*************************** */
@@ -972,4 +987,64 @@ p {
 .contact-formmain .contact_addresec .call_card a {
   display: block;
   color: var(--black-color);
+}
+
+/* *******************************about page   Section CSS end***************************************** */
+
+/* *******************************Service page Section CSS start***************************************** */
+.our_servicesec {
+  padding: 20px;
+}
+.our_servicesec h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 5px;
+  font-family: var(--font-family);
+  color: var(--darkblue-color);
+  position: relative;
+}
+.our_servicesec ul li a {
+  font-size: 18px;
+  background: var(--white-color);
+  padding: 15px;
+  color: var(--darkblue-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our_servicesec ul li a:hover {
+  color: var(--white-color);
+  background: var(--darkblue-color);
+}
+
+.service_rightsec h1 {
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 22px;
+  font-family: var(--font-family);
+  color: var(--darkblue-color);
+  text-transform: capitalize;
+  position: relative;
+}
+ .service_call {
+  background-color: var(--dark-mainblue);
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.service_call  i{
+  background: var(--white-color);
+  width: 50px;
+  height: 50px;
+  color: var(--darkblue-color);
+  line-height: 50px;
+  text-align: center;
+  margin-right:10px;
 }
