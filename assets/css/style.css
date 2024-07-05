@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -15,9 +16,11 @@
   --dark-mainblue: #0d1429;
   --darkblue-color: #092c6e;
   --white-color: #fff;
-  --text-gray: #9b9b9b;
+  --text-gray: #4e4d4d;
   --black-color: #000;
-  --font-family: "Outfit", sans-serif;
+  --font-familyheading: "Raleway", sans-serif;
+  --font-family: "Poppins", sans-serif;
+
   --light-bg: #eef2fa;
 }
 
@@ -66,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family);
+  font-family: var(--font-familyheading) !important;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -165,7 +168,7 @@ p {
   background-color: var(--dark-mainblue);
   border-bottom: 1px solid #f1f0f047;
 }
-.mainheader .navbar-expand-lg  .navbar-brand span{
+.mainheader .navbar-expand-lg .navbar-brand span {
   color: var(--darkblue-color);
   padding: 2px 5px;
   background-color: var(--white-color);
@@ -229,22 +232,22 @@ p {
   color: var(--white-color);
 }
 .bredcrump li a.active {
-  color: var(--text-gray);
+  color: #d8d6d6;
 }
 /* *****************Header Section CSS End*************************** */
 
 /* *****************Hero Section CSS start*************************** */
 .hero_mainsec {
   background: var(--darkblue-color);
-  padding: 120px 0;
+  padding: 50px 0 150px 0;
 }
 
 .hero_mainsec .hero_leftsec h1 {
   color: var(--white-color);
-  font-size: 80px;
-  font-weight: 600;
-  line-height: 90px;
-  margin-bottom: 45px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 71px;
+  margin-bottom: 17px;
 }
 
 .hero_mainsec .hero_leftsec p {
@@ -371,7 +374,7 @@ p {
 }
 
 .service_main .service_maincard:hover .service_content {
-  opacity: 1;
+  bottom: 12px;
 }
 
 .service_main .service_maincard .service_content {
@@ -385,10 +388,12 @@ p {
   right: 0;
   left: 5px;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   transition: all 0.5s;
 }
-
+.service_main .service_maincard .service_content p {
+  color: #fff;
+}
 .service_main .service_maincard .service_imgs img {
   height: 385px;
   border-radius: 10px;
@@ -739,6 +744,7 @@ p {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .blog_maincard .card-body {
@@ -904,11 +910,54 @@ p {
 /* *******************************about page   Section CSS start***************************************** */
 
 .inner_hero {
-  background-image: url(../images/about-us/01.jpg);
+  /* height: 100%;
+  position: relative;
   height: 100%;
   width: 100%;
-  padding: 150px 0;
+  width: 100%; */
+  width: 100%;
+  /* padding: 100px 0; */
+  background-repeat: no-repeat;
+  padding: 128px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: initial;
+  z-index: 0;
 }
+.inner_hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d14298c;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  z-index: -1;
+}
+.about-bgimg {
+  background-image: url(../images/about-us/01.jpg);
+}
+.app_devbgimg {
+  background-image: url(../images/services/Mobile-App-Development-banner.jpg);
+}
+.web_devbgimg {
+  background-image: url(../images/services/Mobile-App-Development-banner.jpg);
+}
+.web_desibgimg {
+  background-image: url(../images/services/Website-Designing-banner.jpg);
+}
+.seobgimg {
+  background-image: url(../images/services/SEO-banner.jpg);
+}
+.digitalbgimg {
+  background-image: url(../images/services/SEO-banner.jpg);
+}
+
 .inner_hero .hero_leftsec h1 {
   font-size: 40px;
   font-weight: 700;
@@ -999,7 +1048,7 @@ p {
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: var(--font-family);
   color: var(--darkblue-color);
   position: relative;
@@ -1032,19 +1081,94 @@ p {
   text-transform: capitalize;
   position: relative;
 }
- .service_call {
+.service_call {
   background-color: var(--dark-mainblue);
   margin-top: 30px;
   padding: 20px;
   font-size: 30px;
 }
 
-.service_call  i{
+.service_call i {
   background: var(--white-color);
   width: 50px;
   height: 50px;
   color: var(--darkblue-color);
   line-height: 50px;
   text-align: center;
-  margin-right:10px;
+  margin-right: 10px;
+}
+.service2_maincard {
+  background: white;
+  padding: 28px 24px;
+  border-radius: 16px;
+  border: 1px solid #dfe0e4;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 390px;
+}
+
+.service2_maincard .card__icon {
+  width: 86px;
+  min-width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border: 1px solid #DFE0E4;
+  margin: auto;
+  cursor: pointer;
+}.service2_maincard .card__icon img{
+  width: 40px!important;
+}
+.service2_maincard .service2title
+{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-bottom: 5px;
+}
+.service2_maincard::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  background: rgba(7, 76, 62, 0.05);
+  border-radius: 16px;
+  width: 100%;cursor: pointer;
+  height: 100%;
+  transition: all 0.35s ease-in-out;
+  z-index: -3;
+}
+.service2_maincard:hover::after {
+  background: var(--darkblue-color);
+}
+.service2_maincard:hover .service2title{
+  color: var(--white-color);
+}
+.service2_maincard:hover p{
+  color: var(--white-color);
+}
+.service2_maincard .service2btn{
+  margin: auto;
+  margin-top: 24px;
+  border: 1px solid #DFE0E4;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: var(--darkblue-color);
+  transform: rotate(-36deg);
 }
