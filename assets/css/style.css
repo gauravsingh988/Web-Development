@@ -413,7 +413,12 @@ p {
   width: 30px !important;
   background: #3967bf;
 }
-
+.owl-theme .owl-dots .owl-dot span{
+    background: #0d142988!important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #0d1429!important;
+}
 .service_main .owl-theme .owl-dots .owl-dot.active span {
   background: var(--darkblue-color);
 }
@@ -800,6 +805,7 @@ p {
 
 .footer_section {
   background-color: var(--dark-mainblue);
+  padding-bottom: 14px;
 }
 
 .footer_section .footer_aboutsec {
@@ -911,13 +917,7 @@ p {
 /* *******************************about page   Section CSS start***************************************** */
 
 .inner_hero {
-  /* height: 100%;
-  position: relative;
-  height: 100%;
   width: 100%;
-  width: 100%; */
-  width: 100%;
-  /* padding: 100px 0; */
   background-repeat: no-repeat;
   padding: 128px 0;
   display: flex;
@@ -926,6 +926,8 @@ p {
   position: relative;
   overflow-x: initial;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 .inner_hero:before {
   content: "";
@@ -936,7 +938,6 @@ p {
   height: 100%;
   background-color: #0d14298c;
   background-repeat: no-repeat;
-  background-position: bottom center;
   background-size: cover;
   z-index: -1;
 }
@@ -947,16 +948,18 @@ p {
   background-image: url(../images/services/Mobile-App-Development-banner.jpg);
 }
 .web_devbgimg {
-  background-image: url(../images/services/Mobile-App-Development-banner.jpg);
+  background-image: url(../images/services/web-wevelopment-home-banner.jpg);
 }
 .web_desibgimg {
   background-image: url(../images/services/Website-Designing-banner.jpg);
 }
 .seobgimg {
   background-image: url(../images/services/SEO-banner.jpg);
+  background-position: bottom left!important;
 }
 .digitalbgimg {
-  background-image: url(../images/services/SEO-banner.jpg);
+  background-image: url(../images/services/Digital-Marketing-banner.jpg);
+  
 }
 
 .inner_hero .hero_leftsec h1 {
