@@ -188,15 +188,16 @@ p {
   margin-top: 0; /* remove the gap so it doesn't close */
 }
 .mainheader .navbar-expand-lg .dropdown .dropdown-menu {
-  padding: 0;
-  border-radius: 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
 .mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item {
   padding: 7px 10px;
+  color: #16181b;
 }
 .mainheader .navbar-expand-lg .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: var(--dark-mainblue);
-  color: var(--white-color);
+  color: var(--darkblue-color);
+  background: transparent;
 }
 .btn-gettouch {
   background: var(--white-color);
@@ -1171,4 +1172,9 @@ p {
   background: #fff;
   color: var(--darkblue-color);
   transform: rotate(-36deg);
+}
+
+.stikypostion{
+  position: sticky;
+  top: 80px;
 }
