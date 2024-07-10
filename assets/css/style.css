@@ -47,14 +47,17 @@ ul {
   background-color: var(--darkblue-color);
   color: var(--white-color);
   text-shadow: none;
+}a
+{
+  color: var(--white-color);
+  
 }
-
 a,
 a:hover,
 a:focus,
 button:focus {
   text-decoration: none;
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 
 .container,
@@ -413,11 +416,12 @@ p {
   width: 30px !important;
   background: #3967bf;
 }
-.owl-theme .owl-dots .owl-dot span{
-    background: #0d142988!important;
+.owl-theme .owl-dots .owl-dot span {
+  background: #0d142988 !important;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-  background: #0d1429!important;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #0d1429 !important;
 }
 .service_main .owl-theme .owl-dots .owl-dot.active span {
   background: var(--darkblue-color);
@@ -955,11 +959,10 @@ p {
 }
 .seobgimg {
   background-image: url(../images/services/SEO-banner.jpg);
-  background-position: bottom left!important;
+  background-position: bottom left !important;
 }
 .digitalbgimg {
   background-image: url(../images/services/Digital-Marketing-banner.jpg);
-  
 }
 
 .inner_hero .hero_leftsec h1 {
@@ -1125,15 +1128,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF;
-  border: 1px solid #DFE0E4;
+  background: #fff;
+  border: 1px solid #dfe0e4;
   margin: auto;
   cursor: pointer;
-}.service2_maincard .card__icon img{
-  width: 40px!important;
 }
-.service2_maincard .service2title
-{
+.service2_maincard .card__icon img {
+  width: 40px !important;
+}
+.service2_maincard .service2title {
   font-size: 22px;
   font-weight: 500;
   line-height: 34px;
@@ -1147,7 +1150,8 @@ p {
   max-height: calc(100% - 20px);
   background: rgba(7, 76, 62, 0.05);
   border-radius: 16px;
-  width: 100%;cursor: pointer;
+  width: 100%;
+  cursor: pointer;
   height: 100%;
   transition: all 0.35s ease-in-out;
   z-index: -3;
@@ -1155,16 +1159,16 @@ p {
 .service2_maincard:hover::after {
   background: var(--darkblue-color);
 }
-.service2_maincard:hover .service2title{
+.service2_maincard:hover .service2title {
   color: var(--white-color);
 }
-.service2_maincard:hover p{
+.service2_maincard:hover p {
   color: var(--white-color);
 }
-.service2_maincard .service2btn{
+.service2_maincard .service2btn {
   margin: auto;
   margin-top: 24px;
-  border: 1px solid #DFE0E4;
+  border: 1px solid #dfe0e4;
   width: 40px;
   min-width: 40px;
   height: 40px;
@@ -1177,7 +1181,92 @@ p {
   transform: rotate(-36deg);
 }
 
-.stikypostion{
+.stikypostion {
   position: sticky;
   top: 80px;
+}
+/* .getintouchside {
+  position: absolute;
+  left: -110px;
+  transform: rotate(-90deg);
+  top: 100px;
+  background-color: #965c37;
+  padding: 9px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+  z-index: 100000;
+} */
+.getensidemainsec {
+  position: fixed;
+  top: 50%;
+  right: -350px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background: #e5ffe8;
+  box-sizing: border-box;
+  transition: 0.5s;  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+
+  border-radius: 5px 0 0 5px;
+  z-index: 999;
+}
+.getbtn {
+  position: absolute;
+  text-align: center;
+  background-color: #07a51c;
+  top: 50%;
+  left: -142px;
+  color: var(--white-color);
+  transform: rotate(-90deg);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px 5px 0 0;
+}
+.getbtn:hover,
+.getbtn:focus {
+  color: var(--white-color);
+  background-color: #07a51c;
+}
+.getensidemainsec.active {
+  right: 0;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.getensidemainsec .form-control {
+  margin-bottom: 0;
+  border-radius: 5px;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  color: #3b3b3b;
+  padding: 10px 15px;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  min-height: 45px;
+}
+
+.getmodal{
+  /* background-color: var(--darkblue-color);
+  color: var(--white-color); */
+}
+.getmodal label{
+  /* color: var(--white-color); */
+  font-size: 16px;
+}
+.getmodal .form-control{
+  margin-bottom: 0;
+  border-radius: 5px;
+  border: 1px solid var(--dark-mainblue);
+  background: transparent;
+  color: var(--dark-mainblue);
+  padding: 10px 15px;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  min-height: 45px;
 }

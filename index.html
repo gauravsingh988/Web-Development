@@ -58,7 +58,7 @@
               <a class="nav-link" href="contact-us.html">Contact</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-gettouch">Get in touch</button>
+              <button class="btn btn-gettouch" data-toggle="modal" data-target="#gettouchmodal">Get in touch</button>
             </li>
           </ul>
         </div>
@@ -79,10 +79,10 @@
               applications using cutting-edge tools.
             </p>
             <div class="get_contancy_btn">
-              <button class="btn btn-freeconslty">
+              <button class="btn btn-freeconslty" data-toggle="modal" data-target="#gettouchmodal">
                 Get Free Consultancy
               </button>
-              <button class="btn btn-gettouch">Call Now to Discuss</button>
+              <!-- <button class="btn btn-gettouch">Call Now to Discuss</button> -->
             </div>
           </div>
         </div>
@@ -107,8 +107,7 @@
                 </div>
                 <div class="form-group">
                   <label for="">Enter Message</label>
-                  <input type="text" class="form-control" placeholder="Enter Message" />
-                </div>
+                  <textarea name="" rows="3" class="form-control" placeholder="Enter Message" id=""></textarea> </div>
                 <button class="btn sendmassage">Send Message</button>
               </div>
             </form>
@@ -125,98 +124,7 @@
       <div class="row sec-title">
         <div class="text-center col-12">
           <h5>Technology & IT Services</h5>
-          <h2>Our Services</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="owl-carousel our-services owl-theme">
-            <div class="item">
-              <div class="service_maincard">
-                <div class="service_imgs">
-                  <img src="./assets/images/services/Website-Designing-banner.jpg" alt="" />
-                </div>
-                <div class="service_content">
-                  <h5>Website Designing</h5>
-                  <p>
-                    We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
-                  <button class="btn btn-gettouch rounded ml-0">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service_maincard">
-                <div class="service_imgs">
-                  <img src="./assets/images/services/web-wevelopment-home.jpg" alt="" />
-                </div>
-                <div class="service_content">
-                  <h5>Web Development</h5>
-                  <p>
-                    We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
-                  <button class="btn btn-gettouch rounded ml-0">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service_maincard">
-                <div class="service_imgs">
-                  <img src="./assets/images/services/Mobile-App-Development-home.jpg" alt="" />
-                </div>
-                <div class="service_content">
-                  <h5>Mobile App Development</h5>
-                  <p>
-                    We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
-                  <button class="btn btn-gettouch rounded ml-0">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service_maincard">
-                <div class="service_imgs">
-                  <img src="./assets/images/services/SEO-home.jpg" alt="" />
-                </div>
-                <div class="service_content">
-                  <h5>Search Engine Optiomization</h5>
-                  <p>
-                    We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
-                  <button class="btn btn-gettouch rounded ml-0">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service_maincard">
-                <div class="service_imgs">
-                  <img src="./assets/images/services/Digital-Marketing-home.jpg" alt="" />
-                </div>
-                <div class="service_content">
-                  <h5>Digital Marketing</h5>
-                  <p>
-                    We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
-                  <button class="btn btn-gettouch rounded ml-0">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2>Web Design Servicess</h2>
         </div>
       </div>
       <div class="row">
@@ -225,15 +133,13 @@
             <div class="item">
               <div class="service2_maincard">
                 <div class="card__icon">
-                  <img src="./assets/images/services/icons/web-programming.png" alt="">
+                  <img src="./assets/images/services/icons/website-design.png" alt="">
                 </div>
                 <div class="service2card__content">
                   <div class="service2title">
                     Website Designing
                   </div>
-                  <p> We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p> <a href="javascript:void()" class="service2btn">
+                  <p> If you're looking for a top website design company in Ireland, your quest may end with GateData. We'll create a modern.. </p> <a href="javascript:void()" class="service2btn">
                     <i class="fa fa-arrow-right"></i>
                   </a>
                 </div>
@@ -248,9 +154,8 @@
                   <div class="service2title">
                     Mobile App Development
                   </div>
-                  <p> We’ve been a strategy thought leader for nearly five
-                    decades and we…
-                  </p>
+                  <p>As a leading mobile app development business in Ireland, India, Web Design Serviceshas been around for a long time..</p>
+                 
                   <a href="javascript:void()" class="service2btn">
                     <i class="fa fa-arrow-right"></i>
                   </a>
@@ -266,8 +171,7 @@
                   <div class="service2title">
                     Web Development
                   </div>
-                  <p> We’ve been a strategy thought leader for nearly five
-                    decades and we…
+                  <p> Your company's success is highly dependent on your website's quality. So, to ensure top-notch website creation..
                   </p>
                   <a href="javascript:void()" class="service2btn">
                     <i class="fa fa-arrow-right"></i>
@@ -284,8 +188,7 @@
                   <div class="service2title">
                     Digital Marketing
                   </div>
-                  <p> We’ve been a strategy thought leader for nearly five
-                    decades and we…
+                  <p> Because of its first-rate digital marketing staff, Web Design Servicesis among Ireland's most coveted top digital marketing agencies..
                   </p>
                   <a href="javascript:void()" class="service2btn">
                     <i class="fa fa-arrow-right"></i>
@@ -302,8 +205,7 @@
                   <div class="service2title">
                     Search Engine Optiomization
                   </div>
-                  <p> We’ve been a strategy thought leader for nearly five
-                    decades and we…
+                  <p> Your company's success is highly dependent on your website's quality. So, to ensure top-notch website creation..
                   </p>
                   <a href="javascript:void()" class="service2btn">
                     <i class="fa fa-arrow-right"></i>
@@ -1264,7 +1166,7 @@
                 <h2>We Design, Deploy, Migrate & Manage Results Driven</h2>
               </div>
               <p>
-                GateData Are A IT Solutions & Technology Services Provider
+                Web Design Services Are A IT Solutions & Technology Services Provider
                 Institutions. Suitable For IT Solutions, IT Technology, IT
                 Business, Consulting, Software, Digital Solution And Any
                 Related Services Company Field.
@@ -1902,9 +1804,8 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="footer_aboutsec">
             <h2>Webdesign</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse alias rerum omnis inventore nam
-              consectetur, eum velit odit harum ducimus recusandae quis, sunt distinctio sint necessitatibus fugiat
-              aspernatur! Iure.</p>
+            <p> Web Design Services Are A IT Solutions & Technology Services Provider
+              Institutions.</p>
             <ul>
               <li><a href="#"><i class="fa fa-facebook"></i></a>
               <li><a href="#"><i class="fa fa-instagram"></i></a>
@@ -1918,9 +1819,9 @@
           <div class="uses_links">
             <h5>Quick Link</h5>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li><a href="#">Faq</a></li>
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
@@ -1930,9 +1831,9 @@
           <div class="contact_link">
             <h5>Contact</h5>
             <ul>
-              <li><a href="#"><i class="fa fa-phone"></i>+1 234 567 891</a></li>
-              <li><a href="#"><i class="fa fa-envelope"></i>info@example.com</a></li>
-              <li><a href="#"><i class="fa fa-map-marker"></i>31 Brandy Way, Sutton, SM2 6SE</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+086 157 6206</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i>sales@webdesignservice.ie</a></li>
+              <li><a href="#"><i class="fa fa-map-marker"></i>12, Tradaree court, Shannon, Co Clare.</a></li>
             </ul>
           </div>
         </div>
@@ -1945,6 +1846,32 @@
   </section>
 
 
+  <div class="getensidemainsec" id="mainsecform">
+    <button id="getintouchside" class="getbtn btn">Get Free Consultancy</button>
+    <div class="getsidefomrsec" >
+      <div class="sec-title mb-0 text-center">
+        <h5 >Get Free Consultancy</h5>
+      </div>
+      <form action="">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <textarea name="" class="form-control" rows="3" id=""></textarea>
+        </div>
+        <button class="btn about_btn w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
 
   <!--***************************** footer   Section end *****************************-->
 
@@ -1955,6 +1882,16 @@
   <script src="./assets/js/owl.carousel.js"></script>
 
   <script>
+
+    // $('#getintouchside').click(function () {
+    //   $('#mainsecform').toggleClass('collapse');
+    // });
+    $(document).ready(function(){
+  $('#getintouchside').click(function(){
+    $('#mainsecform').toggleClass('active')
+    $('#getintouchside').toggleClass('active')
+  })
+})
     $(document).ready(function () {
       $(".our-services").owlCarousel({
         loop: true,
@@ -1962,7 +1899,7 @@
         autoplaySpeed: 800,
         dots: true,
         nav: false,
-        margin:10,
+        margin: 10,
         responsive: {
           0: {
             items: 2,
@@ -1983,7 +1920,7 @@
         autoplaySpeed: 800,
         dots: true,
         nav: false,
-        margin:10,
+        margin: 10,
         responsive: {
           0: {
             items: 2,
@@ -2004,7 +1941,7 @@
         autoplaySpeed: 800,
         dots: true,
         nav: false,
-        margin:10,
+        margin: 10,
         responsive: {
           0: {
             items: 1,
@@ -2020,5 +1957,47 @@
     });
   </script>
 </body>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="gettouchmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content getmodal">
+      <div class="modal-header py-2">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">GET IN TOUCH WITH</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="hero_rightsec">
+          <form action="">
+            <div class="gettouchform">
+              <div class="form-group">
+                <label for="">Full Name</label>
+                <input type="text" class="form-control" placeholder="Full Name" />
+              </div>
+              <div class="form-group">
+                <label for="">Email Address</label>
+                <input type="text" class="form-control" placeholder="Email Address" />
+              </div>
+
+              <div class="form-group">
+                <label for="">Phone Number</label>
+                <input type="text" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <label for="">Enter Message</label>
+                <textarea name="" rows="3" class="form-control" placeholder="Enter Message" id=""></textarea>
+              </div>
+              <button class="btn about_btn w-100">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
